@@ -1,0 +1,176 @@
+:root{
+    --very-dark-blue : #0c192c;
+    --dark-blue: #15273f;
+    --white-title:#fcffff;
+    --cyne:#25dee2;
+    --gray-text:#8196b3;
+}
+@font-face {
+    font-family: outfit;
+    src: url(../font-outfit/Outfit-Bold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: outfit;
+    src: url(../font-outfit/Outfit-SemiBold.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: outfit;
+    src: url(../font-outfit/Outfit-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: outfit;
+    src: url(../font-outfit/Outfit-Medium.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: outfit;
+    src: url(../font-outfit/Outfit-Light.ttf);
+    font-weight: 200;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0c192c;
+    font-family: outfit;
+}
+.container{
+    margin-block:7svh;
+    max-width: 100%;
+}
+/* CARD  CARD CARD */
+.card{
+    background-color: #15273f;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    /* max-width: 20%; */
+    width: max-content;
+    border-radius: 10px;
+}
+.mnm{
+    position: relative;
+}
+.card .Etheriuom{
+    max-width: 22.5rem;
+    margin-block-start: 1rem;
+    border-radius: 10px;
+    padding: 0.5rem;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.card .overlay{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    left: 10px;
+    bottom: 0;
+    width: 95%;
+    height: 91%;
+    background-color: #25dee2;
+    opacity: 0;
+    margin-block-start: 1rem;
+    border-radius: 5px;
+    /* padding: 1rem; */
+    cursor: pointer;
+}
+.card .view-hover img{
+    width: 4rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: 8.4rem;
+}
+.card .overlay:hover{
+    opacity: 0.5;
+    transition: 0.1s ease-in;
+
+}
+.description{
+    display: inline;
+    flex-direction: column;
+    /* margin: 0 auto; */
+    /* max-width: 75%; */
+    
+}
+.card h2{
+    color: #fcffff;
+    font-size: 1.80rem;
+    font-weight: 500;
+    padding: 1rem;
+    cursor: pointer;
+}
+.card h2:hover{
+    color: #25dee2;
+}
+.card .description p{
+    color: #8196b3;
+    font-size: 1rem;
+    padding-left: 1rem;
+    font-weight: 100;
+    max-width: 80%;
+}
+.card .under-discription{
+    display: flex;
+    gap: 10rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    /* border-bottom: 1px solid #8196b3; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+}
+.card .line {
+    width: 22.25rem;
+    height: 0.01rem;
+    display: block;
+    background-color: #8196b3;
+}
+
+.card .under-discription .ETH span{
+    color:#25dee2;
+    font-weight: 600;
+}
+.card .under-discription .ETH{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+}
+.card .under-discription .time{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+}
+.card .under-discription .time span{
+    color:#8196b3;
+    font-weight: 300;
+}
+.creation{
+    display: flex;
+    align-items: center;
+    color: #8196b3;
+    /* background-color: var(--white-title); */
+    padding: 1rem 0.5rem;
+    margin-left: 0;
+    gap: 1rem;
+    margin-right: auto;
+}
+.creation img{
+    max-width: 2.9rem;
+    border: 1px solid #fcffff;
+    border-radius: 50%;
+}
+.creation b{
+    color: #fcffff;
+    cursor: pointer;
+}
+.creation b:hover   {
+    color: #25dee2;
+}
